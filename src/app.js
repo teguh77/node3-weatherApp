@@ -23,20 +23,20 @@ app.use(express.static(publicPath));
 app.get('', (req, res) => {
   res.render('index', {
     title: 'Weather',
-    name: 'Andrew Mead'
+    name: 'Tam'
   });
 });
 app.get('/about', (req, res) => {
   res.render('about', {
     title: 'About Me',
-    name: 'Andrew Mead'
+    name: 'Tam'
   });
 });
 app.get('/help', (req, res) => {
   res.render('help', {
     helpText: 'This is helpfull text!',
     title: 'Help',
-    name: 'Andrew Mead'
+    name: 'Tam'
   });
 });
 
@@ -70,14 +70,14 @@ app.get('/help/*', (req, res) => {
   res.render('404', {
     title: 404,
     error: 'Help article not found!',
-    name: 'Andrew Mead'
+    name: 'Tam'
   });
 });
 app.get('*', (req, res) => {
   res.render('404', {
     title: 404,
     error: 'Page Not Found!',
-    name: 'Andrew Mead'
+    name: 'Tam'
   });
 });
 
